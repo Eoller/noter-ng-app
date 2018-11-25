@@ -21,26 +21,9 @@ export class FeedbackComponent implements OnInit {
   ngOnInit() {
   }
 
-  sendFeedback(): void{
-    this.apiService.postFeedback(this.model).subscribe(
-      res => location.reload(),
-      err => alert("Error while sending post feedback")
-    )
-  }
-
-
-
 }
 
 export interface FeedbackViewModel{
-  name:string;
-  email:string;
-  feedback:string;
-}
-
-
-
-export interface fadsfadsf{
   name:string;
   email:string;
   feedback:string;
